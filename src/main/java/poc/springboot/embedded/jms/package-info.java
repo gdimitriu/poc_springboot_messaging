@@ -17,4 +17,4 @@
  You should have received a copy of the GNU General Public License
  along with poc_aws.  If not, see <http://www.gnu.org/licenses/>.
  */
-package poc.springboot.messaging.jms;
+package poc.springboot.embedded.jms;

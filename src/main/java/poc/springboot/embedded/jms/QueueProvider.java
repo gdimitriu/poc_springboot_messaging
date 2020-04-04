@@ -17,4 +17,28 @@
  You should have received a copy of the GNU General Public License
  along with poc_aws.  If not, see <http://www.gnu.org/licenses/>.
  */
-package poc.springboot.messaging.embedded;
+package poc.springboot.embedded.jms;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Queue provider. This will return all queue that have to be created on the JMS server.
+ * @author Gabriel Dimitriu
+ */
+public class QueueProvider {
+    private static QueueProvider singleton = new QueueProvider();
+
+    /**
+     * private constructor the singleton.
+     */
+    private QueueProvider() {
+
+    }
+    public static QueueProvider getInstance() {
+        return singleton;
+    }
+    public List<String> getQueues() {
+        return new ArrayList<>();
+    }
+}
